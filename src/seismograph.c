@@ -343,7 +343,7 @@ static void seismograph(void)
         Z = Z*L3GD20_SENSITIVITY_500DPS;
 
 		// lectura de batería
-		V = read_adc_naiive(2)*0.7407407;
+		V = read_adc_naiive(2)*100/38;
 		uint16_t input_adc1 = read_adc_naiive(6);
 
 		/* low Battery */
